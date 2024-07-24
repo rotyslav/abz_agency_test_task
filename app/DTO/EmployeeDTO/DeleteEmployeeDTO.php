@@ -2,7 +2,9 @@
 
 namespace App\DTO\EmployeeDTO;
 
-class DeleteEmployeeDTO
-{
+use Spatie\DataTransferObject\DataTransferObject;
 
+class DeleteEmployeeDTO extends DataTransferObject
+{
+    public string $id;
 }

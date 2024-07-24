@@ -10,9 +10,9 @@ return new class extends Migration {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('position');
-            $table->foreign('position')->references('position')->on('positions');
-            $table->foreignId('director_id')->references('id')->on('employees');
+            $table->foreignId('position_id')->constrained('positions');
+            $table->foreignId('headmen_id')->nullable()->references('id')->on('employees');
+            $table->date('date_of_employment');
             $table->string('email');
             $table->string('phone');
             $table->double('salary');

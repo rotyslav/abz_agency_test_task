@@ -2,7 +2,9 @@
 
 namespace App\DTO\PositionDTO;
 
-class DeletePositionDTO
-{
+use Spatie\DataTransferObject\DataTransferObject;
 
+class DeletePositionDTO extends DataTransferObject
+{
+    public int $id;
 }

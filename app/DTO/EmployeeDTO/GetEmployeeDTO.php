@@ -2,7 +2,9 @@
 
 namespace App\DTO\EmployeeDTO;
 
-class GetEmployeeDTO
-{
+use Spatie\DataTransferObject\DataTransferObject;
 
+class GetEmployeeDTO extends DataTransferObject
+{
+    public int $id;
 }

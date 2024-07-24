@@ -2,7 +2,9 @@
 
 namespace App\DTO\PositionDTO;
 
-class GetPositionDTO
-{
+use Spatie\DataTransferObject\DataTransferObject;
 
+class GetPositionDTO extends DataTransferObject
+{
+    public int $id;
 }

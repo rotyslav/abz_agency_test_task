@@ -2,7 +2,9 @@
 
 namespace App\DTO\PositionDTO;
 
-class PostPositionDTO
-{
+use Spatie\DataTransferObject\DataTransferObject;
 
+class PostPositionDTO extends DataTransferObject
+{
+    public string $position;
 }
